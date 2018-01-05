@@ -36,13 +36,9 @@
 	<authData id="TradeDataSourceAuthData" password="db_password" user="db_username"/>
 	<authData id="TradeAdminAuthData" password="db_password" user="db_username"/>
 
-	<dataSource connectionManagerRef="conMgr1" id="TradeDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" jdbcDriverRef="DerbyEmbedded" jndiName="jdbc/TradeDataSource" statementCacheSize="60"> 
+	<dataSource connectionManagerRef="conMgr1" id="DefaultDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" jdbcDriverRef="DerbyEmbedded" jndiName="jdbc/TradeDataSource" statementCacheSize="60"> 
 		<properties.derby.embedded createDatabase="create" databaseName="${server.config.dir}/resources/data/tradedb" password="db_password" user="db_username"/> 
 	</dataSource>
-
-	<dataSource connectionManagerRef="conMgr2" id="NoTxTradeDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" jdbcDriverRef="DerbyEmbedded" jndiName="jdbc/NoTxTradeDataSource" statementCacheSize="10" transactional="false"> 
-		<properties.derby.embedded createDatabase="create" databaseName="${server.config.dir}/resources/data/tradedb" password="db_password" user="db_username"/> 
-	</dataSource>	
 
 	<messagingEngine id="defaultME">
 		<queue id="TradeBrokerQueue"/>
