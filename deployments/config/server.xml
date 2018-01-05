@@ -1,12 +1,17 @@
 <server>
     <featureManager>
-        <feature>ejbLite-3.1</feature>
-        <feature>jsf-2.0</feature>
-        <feature>jaxrs-1.1</feature>
-        <feature>jpa-2.0</feature>
-        <feature>jmsMdb-3.1</feature>
+        <feature>ejb-3.2</feature>
+        <feature>servlet-3.1</feature>
+        <feature>jsf-2.2</feature>
+        <feature>jpa-2.1</feature>
+        <feature>mdb-3.2</feature>
         <feature>wasJmsServer-1.0</feature>
-        <feature>wasJmsClient-1.1</feature>
+        <feature>wasJmsClient-2.0</feature>
+        <feature>cdi-1.2</feature>
+        <feature>websocket-1.1</feature>
+        <feature>concurrent-1.0</feature>
+        <feature>jsonp-1.0</feature>
+        <feature>beanValidation-1.1</feature>
         <feature>localConnector-1.0</feature>
     </featureManager>
 
